@@ -1,10 +1,24 @@
 require 'sinatra/base'
 require 'sinatra/flash'
 require_relative './lib/wordguesser_game.rb'
+require 'sinatra'
+
+class WordGuesserApp < Sinatra::Base
+  post '/new' do
+    "Hello World"
+  end
+end
+
+class MyApp < Sinatra::Base
+  get '/' do
+    "<!DOCTYPE html><html><head></head><body><h1>Hello World</h1></body></html>"
+  end
+end
+
 
 class WordGuesserApp < Sinatra::Base
 
-  enable :sessions
+  enable :sessions  
   register Sinatra::Flash
   
   before do
@@ -63,4 +77,5 @@ class WordGuesserApp < Sinatra::Base
     erb :lose # You may change/remove this line
   end
   
+ 
 end

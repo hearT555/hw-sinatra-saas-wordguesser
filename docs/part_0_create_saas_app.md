@@ -129,7 +129,7 @@ You should now have the following files under version control: `Gemfile`, `Gemfi
 Modify the app
 --------------
 
-Modify `app.rb` so that instead of "Hello World" it prints "Goodbye World". Save your changes to `app.rb` and try refreshing your browser tab where the app is running.
+Modify `app.rb` so that instead of "Hello World" it prints "Goodbye World". Save your changes to `app.rb` and try refreshing your browser tab where the app is running. 
 
 No changes? Confused?
 
